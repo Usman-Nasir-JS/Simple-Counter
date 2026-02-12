@@ -3,83 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple_Countre</title>
-    <style>
-        body{
-            background-color: black;
-            color: white;
-        }
-        .f-small{
-            font-size: 1.5rem;
-        }
-        .f-size{
-            font-size: 11rem;
-        }
-        .d-flex{
-            display: flex;
-            justify-content: center;
-        }
-        .text-centre{
-            text-align: center;
-        }
-        .evenly{
-            justify-content: space-evenly;
-        }
-        .flex-wrap{
-            flex-wrap: wrap;
-        }
-        .round-btn{
-            background-color: blue;
-            border: 2px solid black;
-            border-radius: 30px;
-            padding: 15px 30px;
-            font-size: 2rem;
-            color: white;
-        }
-        .rest-btn{
-            background-color: darkgreen;
-            border: 2px dashed black;
-            border-radius: 30px;
-            padding: 15px 30px;
-            font-size: 2rem;
-            color: white;
-            letter-spacing: 2px;
-        }
-    </style>
+    <title>Countre App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div>
 
- <div>
-
-    <div class="text-centre f-small">
-        <h1>Simple_Counter</h1>
-    </div>
+        <div class="text-centre f-small">
+            <h1>Counter App</h1>
+        </div>
 
         
-    <div class="text-centre">
+        <div class="text-centre">
 
-        <h1 id="heading" class="f-size">0</h1>
+            <h1 id="heading" class="f-size">0</h1>
    
+        </div>
+
+        <div id="heading" class="d-flex evenly flex-wrap">
+
+            <button onclick="increase()" class="round-btn flex-wrap">+</button>
+            <button onclick="reset()" class="rest-btn">Reset</button>
+            <button onclick="decrease()" class="round-btn flex-wrap">-</button>
+
+        </div>
+
     </div>
-
-    <div id="heading" class="d-flex evenly flex-wrap">
-
-        <button onclick="decrease()" class="round-btn flex-wrap">-</button>
-        <button onclick="reset()" class="rest-btn">Reset</button>
-        <button onclick="increase()" class="round-btn flex-wrap">+</button>
-
-    </div>
-
- </div>
 
              
-        <!-- <div><h1 id="heading" class="text-white">0</h1></div>
-        <div>   
+    <!-- <h1 id="heading" class="text-white">0</h1>
+        
+    <div>   
         <button onclick="increament()" class="bg-black large">+</button>
         <button onclick="decreament()" class="bg-black large" >-</button>
         <button onclick="reset()" class="bg-black large">Reset</button>
-        </div> -->
+    </div> -->
 
 
         <script src="./aap.js"></script>

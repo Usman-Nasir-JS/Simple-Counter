@@ -1,15 +1,13 @@
-// console.log ("hello")
+// console.log ("hello world!")
 
 
 var heading = document.querySelector ("#heading")
-
 
 function increase() {
     
     heading.innerHTML = ++heading.innerHTML
 
 }
-
 
 function decrease() {
     if (heading.innerHTML > 0) {
@@ -20,6 +18,7 @@ function decrease() {
 function reset() {
     heading.innerHTML = 0;
 }
+
 
 
 

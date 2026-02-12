@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.f-small{
+    font-size: 1.5rem;
+}
+        
+.f-size{
+    font-size: 8rem;
+}
+        
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+        
+.text-centre{
+    text-align: center;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+        
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.round-btn{
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 2rem;
+    color: white;
+}
+
+.rest-btn{
+    background-color: darkgreen;
+    border: 2px dashed black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 470px) {
+
+    .evenly{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .round-btn{
+        width: 30%;
+    }
+
+    .rest-btn{
+        width: 50%;
+    }
+
+}
